@@ -2,8 +2,8 @@ package shape;
 
 public class Rectangle extends Shape{
 	
-    private double height;
-    private double width;
+    double height;
+    double width;
    
 	public Rectangle(double height, double width){
 		this.height = height;
@@ -11,10 +11,12 @@ public class Rectangle extends Shape{
 	}
 	
 	public double getarea(){ 
-		return height*width;		
+		return height * width;
+		
 	}
 	
 	public String toString(){
 		return "I am a Rectangle and the area is " + getarea();
 	}
+
 }

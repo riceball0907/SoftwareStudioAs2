@@ -2,19 +2,19 @@ package shape;
 
 public class Circle extends Shape{
 
-	private double r;
+	double radius;
+	double area;
 	
-	public Circle(double r){
-		this.r = r;
+	public Circle(double radius){
+		this.radius = radius;
 	}
 	
 	public double getarea(){
-		return r*r*3.14;	
+		return radius*radius*3.14;	
 	}
-
+	
 	public String toString(){
-		return "I am a Circle and the area is "+getarea();
+		return "I am a Circle and the area is " + getarea();
 	}
-
 	
 }
